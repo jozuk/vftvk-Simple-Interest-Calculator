@@ -20,7 +20,7 @@ function compute()
 
     
 }
-        
+    
 function updateTextInput(val) {
     document.getElementById('current_rate').value=val; 
   }
