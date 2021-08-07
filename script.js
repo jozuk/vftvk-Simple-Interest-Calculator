@@ -25,4 +25,11 @@ function updateTextInput(val) {
     document.getElementById('current_rate').value=val; 
   }
 
-
+  var slider = document.getElementById("rate");
+  var output = document.getElementById("current_rate");
+  output.innerHTML = slider.value; // Display the default slider value
+  
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }

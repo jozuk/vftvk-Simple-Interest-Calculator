@@ -9,17 +9,6 @@
         <div id="form_div">
         <label>Amount</label><t></t> <input type="number"  id="principal">  <br/><br/>
         <label>Interest Rate</label> <input type="range"  id="rate" min="0" max="10" value="1.8" step="0.5"> <label id="current_rate" oninput="this.nextElementSibling.value = this.value">1.8</label>%  <br/><br/>
-        <script >
-
-            var slider = document.getElementById("rate");
-            var output = document.getElementById("current_rate");
-            output.innerHTML = slider.value; // Display the default slider value
-            
-            // Update the current slider value (each time you drag the slider handle)
-            slider.oninput = function() {
-              output.innerHTML = this.value;
-            }
-            </script>
         <label>No. of Years</label> <select id="years">
             <option value ="1">1</option>
             <option value ="2">2</option>
