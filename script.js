@@ -20,6 +20,12 @@ function compute()
 
     
 }
+function check(){
+if (parseInt(document.getElementById("principal").value) <= 0)
+{
+    alert("Enter positive value!");
+}
+}
     
 function updateTextInput(val) {
     document.getElementById('current_rate').value=val; 
